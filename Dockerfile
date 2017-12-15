@@ -25,4 +25,4 @@ RUN chmod +x /entrypoint.sh
 USER rpm
 RUN rpmdev-setuptree
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
