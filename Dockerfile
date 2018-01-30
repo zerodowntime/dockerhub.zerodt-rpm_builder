@@ -24,5 +24,6 @@ RUN chmod +x /entrypoint.sh
 
 USER rpm
 RUN rpmdev-setuptree
+RUN echo '%_topdir %(echo $HOME)/rpmbuild' > ~/.rpmmacros 
 
 CMD ["/entrypoint.sh"]
